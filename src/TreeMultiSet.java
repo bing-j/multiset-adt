@@ -1,10 +1,6 @@
 public class TreeMultiSet<T> implements MultiSet<T>{
 
-    private Tree<T> tree;
-
-    public TreeMultiSet(){
-        this.tree = new Tree<T>(null);
-    }
+    private Tree<T> tree = new Tree<T>(null);
 
     @Override
     public boolean add(T item) {
